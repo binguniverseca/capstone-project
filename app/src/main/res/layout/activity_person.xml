@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PersonActivity"
+    android:background="@color/AliceBlue"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_person"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Member ID"
+            android:textSize="15sp"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/SpringGreen" />
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="8888abc"
+            android:enabled="false"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/LightSeaGreen"
+            android:background="@drawable/edit_style" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textSize="15sp"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/SpringGreen" />
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Fay"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/LightSeaGreen"
+            android:background="@drawable/edit_style" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Age"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@color/SpringGreen" />
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="32"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/LightSeaGreen"
+            android:background="@drawable/edit_style" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Gender"
+            android:textSize="15sp"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/SpringGreen" />
+        <EditText
+            android:id="@+id/et_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Female"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/LightSeaGreen"
+            android:background="@drawable/edit_style" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="City"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@color/SpringGreen" />
+        <EditText
+            android:id="@+id/et_nation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Montreal"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/LightSeaGreen"
+            android:background="@drawable/edit_style" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Height"
+            android:textSize="15sp"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/SpringGreen" />
+        <EditText
+            android:id="@+id/et_height"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="165cm"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/LightSeaGreen"
+            android:background="@drawable/edit_style" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Weight"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@color/SpringGreen" />
+        <EditText
+            android:id="@+id/et_weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="60kg"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/LightSeaGreen"
+            android:background="@drawable/edit_style" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_style" />
+    <Button
+        android:id="@+id/btn_modify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/btn_style" />
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/tv_saying"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:textColor="#148F85"
+        android:text="NO PAIN NO GAIN"
+        android:gravity="center"
+        android:background="@drawable/edit_style"/>
+
+</LinearLayout>
